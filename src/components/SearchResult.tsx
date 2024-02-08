@@ -21,8 +21,7 @@ export const SearchResult = ({movies}: ISearchResultProps) => {
                     <img src={movie.Poster} alt={movie.Title} />
                 </div>
             </div>
-        ))
-        }
+        ))}
     </section>
     </>
    
