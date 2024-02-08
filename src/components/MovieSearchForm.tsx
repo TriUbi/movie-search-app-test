@@ -12,7 +12,7 @@ export const MovieSearchForm = (props: IMovieSearchFormProps) => {
         };
         
         const handleSubmit = (e: FormEvent) => {
-        e.preventDefault
+        e.preventDefault();
         props.search(userTextSearch);
         };
 
