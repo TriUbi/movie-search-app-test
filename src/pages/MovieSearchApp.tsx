@@ -3,7 +3,7 @@ import { MovieSearchForm } from "../components/MovieSearchForm"
 import { IMovie } from "../models/IMovie";
 import { IOmdbResponse } from "../models/IOmdbResponse";
 import axios from "axios";
-import { SeacrhResult } from "../components/SeacrhResult";
+import { SearchResult } from "../components/SearchResult";
 
 export const MovieSearchApp=()=>{
  const [movies, setMovies] = useState<IMovie[]>();
@@ -18,7 +18,7 @@ export const MovieSearchApp=()=>{
     return <>
    <MovieSearchForm search={searchMovies}/>
 
-   <SeacrhResult movies={movies}/>
+   <SearchResult movies={movies}/>
 
         </>
 };
